@@ -8,12 +8,13 @@ const RoutesApp = () => {
     return (
 <ThemeProvider> 
 <Router>
-        <nav>
-                <Link to='/' > Home </Link >
+        <nav className="nav">
+                <Link to='/'> Home </Link >
                 <Link to='/myjob'>MyJob</Link>
                 <Link to='/profile'>Profile</Link>
-                <Button></Button>
+                
         </nav>
+                <Button></Button>
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/myjob" element={<MyJob />} />
